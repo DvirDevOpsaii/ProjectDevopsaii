@@ -1,0 +1,11 @@
+<!-- app/templates/calendar.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Task Calendar</h1>
+<ul>
+    {% for task in tasks %}
+    <li>{{ task.title }} - {{ task.due_date }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
